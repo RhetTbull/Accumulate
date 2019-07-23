@@ -1,0 +1,192 @@
+[
+  {
+    "nodes" : [
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{36, 38}, {260, 87}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "timeSet",
+          "flex" : "W",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "485D44D4-B11F-4F61-970A-0B73B15C8053",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "5:00",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_size" : 72,
+          "font_name" : "Arial-BoldMT"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{36, 350}, {96, 42}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "self.btnStart",
+          "image_name" : "iob:ios7_play_24",
+          "frame" : "{{120, 224}, {80, 32}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "title" : "Start",
+          "uuid" : "F173BEB8-98A9-46D8-99FA-D2D7D18701F1",
+          "class" : "Button",
+          "font_bold" : true,
+          "name" : "btnStart",
+          "font_size" : 24
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{36, 144}, {260, 87}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "W",
+          "font_name" : "Arial-BoldMT",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "485D44D4-B11F-4F61-970A-0B73B15C8053",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "0:00",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "name" : "timeCounter",
+          "font_size" : 72
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{36, 262}, {260, 87}}",
+        "class" : "Label",
+        "attributes" : {
+          "flex" : "W",
+          "font_size" : 72,
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "485D44D4-B11F-4F61-970A-0B73B15C8053",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "0:00",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "name" : "timePaused",
+          "font_name" : "Arial-BoldMT"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{200, 350}, {96, 42}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "self.btnStop",
+          "image_name" : "iob:stop_24",
+          "frame" : "{{120, 224}, {80, 32}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "title" : "Stop",
+          "uuid" : "F173BEB8-98A9-46D8-99FA-D2D7D18701F1",
+          "class" : "Button",
+          "font_bold" : true,
+          "name" : "btnStop",
+          "font_size" : 24
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{36, 400}, {260, 66}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "self.btnPause",
+          "frame" : "{{120, 224}, {80, 32}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "title" : "Rest",
+          "uuid" : "F173BEB8-98A9-46D8-99FA-D2D7D18701F1",
+          "class" : "Button",
+          "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "font_bold" : true,
+          "name" : "btnPause",
+          "font_size" : 24
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{36, 6}, {260, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "name" : "label1",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "FCE37C0C-5EBE-4C79-B5A7-F03C400A370E",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Goal",
+          "font_size" : 18,
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{36, 125.5}, {260, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_name" : "<System>",
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "FCE37C0C-5EBE-4C79-B5A7-F03C400A370E",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Work",
+          "name" : "label1",
+          "font_size" : 18
+        },
+        "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{36, 231.5}, {260, 32}}",
+        "class" : "Label",
+        "attributes" : {
+          "font_size" : 18,
+          "frame" : "{{85, 224}, {150, 32}}",
+          "uuid" : "FCE37C0C-5EBE-4C79-B5A7-F03C400A370E",
+          "class" : "Label",
+          "alignment" : "center",
+          "text" : "Rest",
+          "name" : "label1",
+          "font_name" : "<System>"
+        },
+        "selected" : false
+      }
+    ],
+    "frame" : "{{0, 0}, {320, 480}}",
+    "class" : "View",
+    "attributes" : {
+      "flex" : "",
+      "custom_class" : "",
+      "enabled" : true,
+      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+      "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
+      "name" : "Timer"
+    },
+    "selected" : false
+  }
+]
