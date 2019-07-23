@@ -13,10 +13,10 @@ class CustomUIView(ui.View):
 		self.color_rest = '#ff7272'
 		self.color_work = '#46d176'
 		self.color_default = 'white'
-		self.x = 0
-		self.y = 0
-		self.height = 480
-		self.width = 320
+		#self.x = 0
+		#self.y = 0
+		#self.height = 480
+		#self.width = 320
 		self.timeSet = 300 # seconds
 		self.timeCounter = 0
 		self.timePaused = 0
