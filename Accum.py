@@ -5,6 +5,9 @@ import time
 #TODO: Add logging
 #TODO: Add finished when stopped or reach timer
 #TODO: Add adjustment of goal time
+#TODO: Add beep or voice every min / 30 sec , etc
+#TODO: Add warm-up count-down
+
 
 class CustomUIView(ui.View):
 	def __init__(self):
