@@ -27,6 +27,9 @@ class CustomUIView(ui.View):
 		self.paused = False
 		self.view['btnStop'].enabled = False
 		self.view['btnPause'].enabled = False
+		self.view['btnStart'].enabled = True
+		self.view['btnReset'].enabled = False
+		
 		
 #	def draw(self):
 #		#if the path is larger then 100x100 it will be clipped
@@ -68,6 +71,7 @@ class CustomUIView(ui.View):
 		self.view['btnStart'].enabled = False
 		self.view['btnStop'].enabled = True
 		self.view['btnPause'].enabled = True
+		self.view['btnReset'].enabled = False
 		if self.paused:
 			self.view.background_color = self.color_rest
 			self.updatePaused()
@@ -81,6 +85,7 @@ class CustomUIView(ui.View):
 		self.view['btnStop'].enabled = False
 		self.view['btnStart'].enabled = True
 		self.view['btnPause'].enabled = False
+		self.view['btnReset'].enabled = True
 		#self.view['timeCounter'].background_color='white'
 		self.view.background_color = self.color_default
 		pass
@@ -104,6 +109,11 @@ class CustomUIView(ui.View):
 			self.view.background_color = self.color_rest
 			self.updatePaused()
 			
+	def btnReset(self, sender):
+		self.timeCounter = self.timePaused = 0
+		self.view['timeSet'].text = format_sec_to_clock(self.timeSet)
+		self.view['timeCounter'].text = format_sec_to_clock(self.timeCounter)
+		self.view['timePaused'].text = format_sec_to_clock(self.timePaused)
 		
 	@ui.in_background
 	def updateTimer(self):
@@ -114,12 +124,13 @@ class CustomUIView(ui.View):
 			now = time.perf_counter()
 			delta = now - timeStart
 			self.timeCounter += delta
-			minutes = int(self.timeCounter / 60)
-			seconds = int(self.timeCounter - minutes * 60)
-			#print(f"{self.timeCounter},{minutes},{seconds}")
-			strtime = "{0:01d}:{1:02d}".format(int(minutes),int(seconds))
+#			minutes = int(self.timeCounter / 60)
+#			seconds = int(self.timeCounter - minutes * 60)
+#			#print(f"{self.timeCounter},{minutes},{seconds}")
+#			strtime = "{0:01d}:{1:02d}".format(int(minutes),int(seconds))
+
 			#print(strtime)
-			self.view['timeCounter'].text = strtime
+			self.view['timeCounter'].text = format_sec_to_clock(self.timeCounter)
 			timeStart = time.perf_counter()
 			time.sleep(0.10)
 			
@@ -134,15 +145,23 @@ class CustomUIView(ui.View):
 			#print(f"timePaused = {self.timePaused}, began = {timePausedBegan}, now = {now}, delta={delta}")
 			self.timePaused += delta
 			#print(f"timePaused = {self.timePaused}, delta={delta}")
-			minutes = int(self.timePaused / 60)
-			seconds = int(self.timePaused - minutes * 60)
-			#print(f"timePaused = {self.timePaused}, delta={delta}, began={timePausedBegan} {minutes}, {seconds}")
-			strtime = "{0:01d}:{1:02d}".format(int(minutes),int(seconds))
-			#print(strtime)
-			self.view['timePaused'].text = strtime
+#			minutes = int(self.timePaused / 60)
+#			seconds = int(self.timePaused - minutes * 60)
+#			#print(f"timePaused = {self.timePaused}, delta={delta}, began={timePausedBegan} {minutes}, {seconds}")
+#			strtime = "{0:01d}:{1:02d}".format(int(minutes),int(seconds))
+#			#print(strtime)
+
+			self.view['timePaused'].text = format_sec_to_clock(self.timePaused)
 			timePausedBegan = time.perf_counter()
 			time.sleep(0.10)
-				
+		
+def format_sec_to_clock(secs):
+	minutes = int(secs / 60)
+	seconds = int(secs - minutes * 60)
+	#print(f"{self.timeCounter},{minutes},{seconds}")
+	strtime = "{0:01d}:{1:02d}".format(int(minutes),int(seconds))
+	return strtime
+			
 CustomUIView()
 #me_counter = v['timeCounter']
 

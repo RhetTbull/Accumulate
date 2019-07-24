@@ -9,14 +9,14 @@
         "class" : "Label",
         "attributes" : {
           "flex" : "W",
-          "name" : "timeSet",
+          "font_size" : 72,
           "frame" : "{{85, 224}, {150, 32}}",
           "uuid" : "485D44D4-B11F-4F61-970A-0B73B15C8053",
           "class" : "Label",
           "alignment" : "center",
           "text" : "5:00",
           "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
-          "font_size" : 72,
+          "name" : "timeSet",
           "font_name" : "Arial-BoldMT"
         },
         "selected" : false
@@ -36,8 +36,8 @@
           "uuid" : "F173BEB8-98A9-46D8-99FA-D2D7D18701F1",
           "class" : "Button",
           "font_bold" : true,
-          "name" : "btnStart",
-          "font_size" : 24
+          "font_size" : 24,
+          "name" : "btnStart"
         },
         "selected" : false
       },
@@ -56,8 +56,8 @@
           "alignment" : "center",
           "text" : "0:00",
           "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
-          "name" : "timeCounter",
-          "font_size" : 72
+          "font_size" : 72,
+          "name" : "timeCounter"
         },
         "selected" : false
       },
@@ -69,14 +69,14 @@
         "class" : "Label",
         "attributes" : {
           "flex" : "W",
-          "font_size" : 72,
+          "name" : "timePaused",
           "frame" : "{{85, 224}, {150, 32}}",
           "uuid" : "485D44D4-B11F-4F61-970A-0B73B15C8053",
           "class" : "Label",
           "alignment" : "center",
           "text" : "0:00",
           "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
-          "name" : "timePaused",
+          "font_size" : 72,
           "font_name" : "Arial-BoldMT"
         },
         "selected" : false
@@ -96,8 +96,8 @@
           "uuid" : "F173BEB8-98A9-46D8-99FA-D2D7D18701F1",
           "class" : "Button",
           "font_bold" : true,
-          "name" : "btnStop",
-          "font_size" : 24
+          "font_size" : 24,
+          "name" : "btnStop"
         },
         "selected" : false
       },
@@ -108,14 +108,16 @@
         "frame" : "{{0, 468}, {352, 94}}",
         "class" : "Button",
         "attributes" : {
-          "action" : "self.btnPause",
+          "uuid" : "F173BEB8-98A9-46D8-99FA-D2D7D18701F1",
+          "corner_radius" : 0,
           "frame" : "{{120, 224}, {80, 32}}",
           "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
-          "title" : "Rest",
-          "uuid" : "F173BEB8-98A9-46D8-99FA-D2D7D18701F1",
-          "class" : "Button",
+          "border_width" : 0,
           "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "title" : "Rest",
+          "action" : "self.btnPause",
           "font_bold" : true,
+          "class" : "Button",
           "name" : "btnPause",
           "font_size" : 24
         },
@@ -128,13 +130,13 @@
         "frame" : "{{36, 6}, {260, 32}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "label1",
+          "font_size" : 18,
           "frame" : "{{85, 224}, {150, 32}}",
           "uuid" : "FCE37C0C-5EBE-4C79-B5A7-F03C400A370E",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Goal",
-          "font_size" : 18,
+          "name" : "label1",
           "font_name" : "<System>"
         },
         "selected" : false
@@ -152,8 +154,8 @@
           "class" : "Label",
           "alignment" : "center",
           "text" : "Work",
-          "name" : "label1",
-          "font_size" : 18
+          "font_size" : 18,
+          "name" : "label1"
         },
         "selected" : false
       },
@@ -164,13 +166,13 @@
         "frame" : "{{36, 295.5}, {260, 32}}",
         "class" : "Label",
         "attributes" : {
-          "font_size" : 18,
+          "name" : "label1",
           "frame" : "{{85, 224}, {150, 32}}",
           "uuid" : "FCE37C0C-5EBE-4C79-B5A7-F03C400A370E",
           "class" : "Label",
           "alignment" : "center",
           "text" : "Rest",
-          "name" : "label1",
+          "font_size" : 18,
           "font_name" : "<System>"
         },
         "selected" : false
@@ -182,18 +184,17 @@
         "frame" : "{{133, 418}, {92, 42}}",
         "class" : "Button",
         "attributes" : {
-          "action" : "self.btnStop",
-          "font_size" : 24,
+          "action" : "self.btnReset",
+          "name" : "btnReset",
           "frame" : "{{120, 224}, {80, 32}}",
           "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
-          "title" : "Stop",
+          "title" : "Reset",
           "uuid" : "F173BEB8-98A9-46D8-99FA-D2D7D18701F1",
           "class" : "Button",
           "font_bold" : true,
-          "name" : "btnStop",
-          "image_name" : "iob:stop_24"
+          "font_size" : 24
         },
-        "selected" : true
+        "selected" : false
       }
     ],
     "frame" : "{{0, 0}, {358, 567}}",
