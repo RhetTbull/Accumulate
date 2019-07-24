@@ -31,28 +31,6 @@ class CustomUIView(ui.View):
 		self.view['btnReset'].enabled = False
 		
 		
-#	def draw(self):
-#		#if the path is larger then 100x100 it will be clipped
-#		#path = ui.Path.rect(0, 0, 100, 100)
-#		#ui.set_color(self.color)
-#		#path.fill()
-#		#__super__.draw(self)
-#		pass
-
-
-#	def touch_ended(self, touch):
-##		if self.color == 'green':
-##			self.color = 'blue'
-##		else:
-##			self.color = 'red'
-#		self.set_needs_display()
-#		
-#	def touch_began(self, touch):
-##		self.color = 'green'
-#		self.color = 'blue'
-#		self.set_needs_display()
-
-
 #class SpecialButton(object):
 #	def __init__(self):
 #		self.view = ui.load_view('SpecialButton')

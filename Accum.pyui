@@ -5,7 +5,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 38}, {298, 87}}",
+        "frame" : "{{28, 46}, {298, 87}}",
         "class" : "Label",
         "attributes" : {
           "flex" : "W",
@@ -45,7 +45,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 178}, {298, 87}}",
+        "frame" : "{{28, 180}, {298, 87}}",
         "class" : "Label",
         "attributes" : {
           "flex" : "W",
@@ -65,7 +65,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 323}, {298, 87}}",
+        "frame" : "{{28, 323}, {298, 87}}",
         "class" : "Label",
         "attributes" : {
           "flex" : "W",
@@ -127,7 +127,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 6}, {260, 32}}",
+        "frame" : "{{28, 19}, {298, 32}}",
         "class" : "Label",
         "attributes" : {
           "font_size" : 18,
@@ -145,7 +145,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 148.5}, {260, 32}}",
+        "frame" : "{{28, 152}, {298, 32}}",
         "class" : "Label",
         "attributes" : {
           "font_name" : "<System>",
@@ -163,7 +163,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 295.5}, {260, 32}}",
+        "frame" : "{{28, 296}, {298, 32}}",
         "class" : "Label",
         "attributes" : {
           "name" : "label1",
