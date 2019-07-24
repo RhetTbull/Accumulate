@@ -5,11 +5,11 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 38}, {260, 87}}",
+        "frame" : "{{36, 38}, {298, 87}}",
         "class" : "Label",
         "attributes" : {
-          "name" : "timeSet",
           "flex" : "W",
+          "name" : "timeSet",
           "frame" : "{{85, 224}, {150, 32}}",
           "uuid" : "485D44D4-B11F-4F61-970A-0B73B15C8053",
           "class" : "Label",
@@ -25,7 +25,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 350}, {96, 42}}",
+        "frame" : "{{6, 418}, {96, 42}}",
         "class" : "Button",
         "attributes" : {
           "action" : "self.btnStart",
@@ -45,7 +45,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 144}, {260, 87}}",
+        "frame" : "{{36, 178}, {298, 87}}",
         "class" : "Label",
         "attributes" : {
           "flex" : "W",
@@ -65,7 +65,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 262}, {260, 87}}",
+        "frame" : "{{36, 323}, {298, 87}}",
         "class" : "Label",
         "attributes" : {
           "flex" : "W",
@@ -85,7 +85,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{200, 350}, {96, 42}}",
+        "frame" : "{{256, 418}, {96, 42}}",
         "class" : "Button",
         "attributes" : {
           "action" : "self.btnStop",
@@ -105,7 +105,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 400}, {260, 66}}",
+        "frame" : "{{0, 468}, {352, 94}}",
         "class" : "Button",
         "attributes" : {
           "action" : "self.btnPause",
@@ -143,7 +143,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 125.5}, {260, 32}}",
+        "frame" : "{{36, 148.5}, {260, 32}}",
         "class" : "Label",
         "attributes" : {
           "font_name" : "<System>",
@@ -161,7 +161,7 @@
         "nodes" : [
 
         ],
-        "frame" : "{{36, 231.5}, {260, 32}}",
+        "frame" : "{{36, 295.5}, {260, 32}}",
         "class" : "Label",
         "attributes" : {
           "font_size" : 18,
@@ -174,15 +174,35 @@
           "font_name" : "<System>"
         },
         "selected" : false
+      },
+      {
+        "nodes" : [
+
+        ],
+        "frame" : "{{133, 418}, {92, 42}}",
+        "class" : "Button",
+        "attributes" : {
+          "action" : "self.btnStop",
+          "font_size" : 24,
+          "frame" : "{{120, 224}, {80, 32}}",
+          "tint_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
+          "title" : "Stop",
+          "uuid" : "F173BEB8-98A9-46D8-99FA-D2D7D18701F1",
+          "class" : "Button",
+          "font_bold" : true,
+          "name" : "btnStop",
+          "image_name" : "iob:stop_24"
+        },
+        "selected" : true
       }
     ],
-    "frame" : "{{0, 0}, {320, 480}}",
+    "frame" : "{{0, 0}, {358, 567}}",
     "class" : "View",
     "attributes" : {
       "flex" : "",
       "custom_class" : "",
       "enabled" : true,
-      "tint_color" : "RGBA(0.000000,0.478000,1.000000,1.000000)",
+      "tint_color" : "RGBA(1.000000,0.934524,0.958333,1.000000)",
       "border_color" : "RGBA(0.000000,0.000000,0.000000,1.000000)",
       "background_color" : "RGBA(1.000000,1.000000,1.000000,1.000000)",
       "name" : "Timer"
