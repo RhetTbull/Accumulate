@@ -2,6 +2,8 @@
 
 Simple timer app for iOS to accumulate a certain amount of time doing a task. I created this for workouts--specifically, timing a certain amount of time in a plank position.  You can pause the timer then restart until you reach the goal time.
 
+![Screenshot](screenshot.png)
+
 ## Getting Started
 
 Copy the files to [Pythonista](http://omz-software.com/pythonista/) and run Accum.py
